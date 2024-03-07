@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    scrollbar-color: #8e8e8e #fff;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Anta;
+}
+
+nav {
+    background-color: #0c0c0c;
+    position: fixed;
+    display: flex;
+    height: auto;
+    width: 100%;
+    z-index: 200;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .09);
+    ;
+    padding: 25px 40px 25px 50px;
+    font-size: 1.5rem;
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+
+        .contact {
+            padding-right: 2rem;
+            border-right: 2px solid;
+        }
+
+        a {
+            color: #bcbcbc;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .23s;
+
+            @media (max-width: 900px) {
+                display: none;
+            }
+
+            &:hover {
+                color: #147efb;
+            }
+        }
+    }
+}
+
+.logo {
+    color: #bcbcbc;
+    cursor: pointer;
+}
+
+/*Home Section*/
+
+.intro {
+    background-color: #0c0c0c;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+
+    @media (max-width: 900px) {
+        height: auto;
+        padding: 11rem 0;
+    }
+}
+
+.layout {
+    margin: 0 auto;
+    max-width: 100rem;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 50rem;
+    justify-content: center;
+    position: relative;
+}
+
+.content {
+    padding: 0 4rem;
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    position: relative;
+}
+
+
+.intro-text {
+    flex-direction: column;
+    max-width: 35rem;
+    position: relative;
+    display: flex;
+
+    p {
+        color: #bcbcbc;
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+}
+
+/* START animation Hello World Typing */
+.typing-hello {
+    width: fit-content;
+    max-width: 50rem;
+    justify-content: left;
+
+    p {
+        color: #bcbcbc;
+        font-size: 4rem;
+        line-height: 1.2;
+        font-family: prompt;
+        font-weight: 200;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+/* END animation Hello World Typing */
+.me-img {
+    -webkit-animation: morph 8s ease-in-out infinite;
+    animation: morph 8s ease-in-out infinite;
+    background-image: url(/Image/mephoto.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    height: 25rem;
+    position: relative;
+    transition: all 1s ease-in-out;
+    width: 25rem;
+}
+
+.list-stack {
+    align-items: center;
+    bottom: 0;
+    color: #767676;
+    display: flex;
+    font-size: 1.7rem;
+    left: 0;
+    position: absolute;
+
+    p {
+        border-right: 2px solid rgba(45, 46, 50, .5);
+        color: #2d2e32;
+        font-weight: 600;
+        margin-right: 7rem;
+        padding-right: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+}
+
+/*About Section*/
+
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.container-about h1 {
+    padding: 15vh 0;
+    color: #2d2e32;
+}
+
+.content-about {
+    padding: 0 4rem;
+}
