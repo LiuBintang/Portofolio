@@ -1,13 +1,12 @@
-const p = document.querySelector("#hello");
 const text = "Hello World!";
-
-function textTypingEffect(element, text, i = 0) {
-    element.textContent += text[i];
-
-    if (i === text.length -1) {
-        return;
-    }
-    setTimeout(() => textTypingEffect(element, text, i + 1), 12)
+let index = 0;
+const typingSpeed = 50;
+function type() {
+document.getElementById('hello').innerHTML = text.slice(0, index);
+index++;
+if (index <= text.length) {
+setTimeout(type, typingSpeed);
+}
 }
 
-textTypingEffect(p, text);
+type();
