@@ -119,22 +119,21 @@ nav {
     }
 }
 
-/* START animation Hello World Typing */
-.typing-hello {
-    width: fit-content;
-    max-width: 50rem;
-    justify-content: left;
+#hello{
+    color: #bcbcbc;
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 1.6;
+}        
+        .typing-cursor {
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
 
-    p {
-        color: #bcbcbc;
-        font-size: 4rem;
-        line-height: 1.2;
-        font-family: prompt;
-        font-weight: 200;
-        position: relative;
-        margin: 0 auto;
-    }
-}
 /* END animation Hello World Typing */
 .me-img {
     -webkit-animation: morph 8s ease-in-out infinite;
@@ -150,6 +149,20 @@ nav {
     transition: all 1s ease-in-out;
     width: 25rem;
 }
+
+@keyframes morph {
+    0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+  }
 
 .list-stack {
     align-items: center;
