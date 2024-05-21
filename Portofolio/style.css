@@ -32,7 +32,7 @@ nav {
     box-shadow: 0 0 10px rgba(0, 0, 0, .09);
     ;
     padding: 25px 40px 25px 50px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
     ul {
         display: flex;
@@ -99,8 +99,7 @@ nav {
     padding: 0 4rem;
     align-items: center;
     display: flex;
-    gap: 3rem;
-    justify-content: center;
+    gap: 15rem;
     position: relative;
 }
 
@@ -119,20 +118,30 @@ nav {
     }
 }
 
-#hello{
+#hello {
     color: #bcbcbc;
-        font-size: 3rem;
-        font-weight: 300;
-        line-height: 1.6;
-}        
-        .typing-cursor {
-            animation: blink 1s infinite;
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.typing-cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 /* END animation Hello World Typing */
 .me-img {
@@ -152,17 +161,17 @@ nav {
 
 @keyframes morph {
     0% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 
     50% {
-      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
 
     100% {
-      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
-  }
+}
 
 .list-stack {
     align-items: center;
@@ -189,21 +198,30 @@ nav {
     }
 }
 
-/*About Section*/
+/*Project Section*/
 
-.about {
+.project {
     display: flex;
     flex-direction: column;
     height: 100vh;
     position: relative;
     width: 100%;
+
+    h1 {
+
+    }
 }
 
-.container-about h1 {
-    padding: 15vh 0;
-    color: #2d2e32;
-}
+.container-project {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 60% 40%;
+    gap: 3rem;
 
-.content-about {
-    padding: 0 4rem;
+    img {
+        border-radius: 3%;
+        height: 20rem;
+        width: 20rem;
+    }
 }
