@@ -201,23 +201,28 @@ nav {
 /*Project Section*/
 
 .project {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     position: relative;
+    height: 100vh;
     width: 100%;
-}
 
 .container-project {
-    margin: 20px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 60% 40%;
-    gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  
+  h1{
+    display: flex;
+    font-size: 50px;
+    font-weight: 200;
+  }
+  
+  div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: ;
+  }
+}
 
-    img {
-        border-radius: 3%;
-        height: 20rem;
-        width: 20rem;
-    }
+.keyboard {
+  
 }
