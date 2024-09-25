@@ -21,18 +21,16 @@ body {
 }
 
 nav {
-    background-color: #0c0c0c;
-    position: fixed;
+    background-color: #181C14;
     display: flex;
-    height: auto;
+    height: 5rem;
     width: 100%;
     z-index: 200;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, .09);
-    ;
-    padding: 25px 40px 25px 50px;
-    font-size: 1.3rem;
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
 
     ul {
         display: flex;
@@ -42,10 +40,11 @@ nav {
         .contact {
             padding-right: 2rem;
             border-right: 2px solid;
+            border-color: #ECDFCC;
         }
 
         a {
-            color: #bcbcbc;
+            color: #ECDFCC;
             font-weight: 600;
             text-decoration: none;
             transition: all .23s;
@@ -55,25 +54,28 @@ nav {
             }
 
             &:hover {
-                color: #147efb;
+                color: #697565;
             }
         }
     }
 }
 
 .logo {
-    color: #bcbcbc;
-    cursor: pointer;
+    font-size: 2rem;
+    color: #ECDFCC;
+    cursor: default;
+    transition: all.23s;
+
+    &:hover {
+        color: #697565;
+    }
 }
 
 /*Home Section*/
 
 .intro {
-    background-color: #0c0c0c;
-    display: flex;
-    flex-direction: column;
+    background-color: #181C14;
     height: 100vh;
-    position: relative;
     width: 100%;
 
     @media (max-width: 900px) {
@@ -82,45 +84,51 @@ nav {
     }
 }
 
-.layout {
-    margin: 0 auto;
-    max-width: 100rem;
-}
-
 .container {
-    align-items: center;
-    display: flex;
-    height: 50rem;
-    justify-content: center;
     position: relative;
+    display: flex;
+    height: 85vh;
+    justify-content: center;
 }
 
 .content {
-    padding: 0 4rem;
-    align-items: center;
-    display: flex;
-    gap: 15rem;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80rem;
 }
 
 
 .intro-text {
-    flex-direction: column;
-    max-width: 35rem;
     position: relative;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 35rem;
+
+    .myname {
+        color: #ECDFCC;
+        font-size: 1.4rem;
+    }
+
+    .bintangliu {
+        color: #ECDFCC;
+        font-size: 5rem;
+    }
 
     p {
-        color: #bcbcbc;
+        color: #697565;
         font-size: 1.3rem;
         font-weight: 300;
         line-height: 1.6;
     }
 }
 
+/* animation Hello World Typing */
 #hello {
-    color: #bcbcbc;
-    font-size: 3rem;
+    color: #697565;
+    font-size: 2rem;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -144,6 +152,8 @@ nav {
 }
 
 /* END animation Hello World Typing */
+
+/* Animation Photo Pas */
 .me-img {
     -webkit-animation: morph 8s ease-in-out infinite;
     animation: morph 8s ease-in-out infinite;
@@ -151,7 +161,7 @@ nav {
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 3px solid #2d2e32;
+    border: 3px solid #3C3D37;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     height: 25rem;
     position: relative;
@@ -173,10 +183,12 @@ nav {
     }
 }
 
+/* End Animation Photo Pas */
+
 .list-stack {
     align-items: center;
     bottom: 0;
-    color: #767676;
+    color: #697565;
     display: flex;
     font-size: 1.7rem;
     left: 0;
@@ -201,28 +213,62 @@ nav {
 /*Project Section*/
 
 .project {
-    position: relative;
-    height: 100vh;
+    background-color: #697565;
+    height: 135vh;
     width: 100%;
-
-.container-project {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-  
-  h1{
-    display: flex;
-    font-size: 50px;
-    font-weight: 200;
-  }
-  
-  div{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: ;
-  }
 }
 
-.keyboard {
-  
+.project-tittle {
+    padding: 2rem 5rem;
+    font-size: 2rem;
+    color: #181C14
+}
+
+.layout-project {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.container-project {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 80rem;
+
+    img {
+        display: block;
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+.overlaytext {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    cursor: pointer;
+    padding: 1.5rem;
+    width: 18rem;
+    height: 100%;
+    top: 0;
+    background:rgba(24, 28, 20, 0.7);
+    opacity: 0;
+    transition: 0.6s;
+    
+    &:hover{
+        opacity: 1;
+    }
+
+    h1{
+        color: #ECDFCC;
+    }
+
+    p{
+        color: #fff;
+    }
 }
