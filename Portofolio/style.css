@@ -226,21 +226,38 @@ nav {
 
 .layout-project {
     display: flex;
-    justify-content: center;
-    padding: 2rem 0;
+}
+
+.categories {
+    display: flex;
+    height: fit-content;
+    width: 18rem;
+    background-color: aqua;
+
+    ul {
+        list-style: none;
+        
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 6.5rem 0 5rem;
+            margin: 1rem 0 1rem 0;
+            background-color: #8e8e8e;
+        }
+    }
 }
 
 .container-project {
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    gap: 2rem;
-    width: 80rem;
+    background-color: rgb(4, 211, 211);
 
     img {
         display: block;
+        padding: 0.5rem;
         width: 18rem;
         height: 18rem;
     }
@@ -254,21 +271,21 @@ nav {
     cursor: pointer;
     padding: 1.5rem;
     width: 18rem;
-    height: 100%;
-    top: 0;
-    background:rgba(24, 28, 20, 0.7);
+    margin-top: -18rem;
+    height: 18rem;
+    background: rgba(24, 28, 20, 0.7);
     opacity: 0;
-    transition: 0.6s;
-    
-    &:hover{
+    transition: all 0.6s;
+
+    &:hover {
         opacity: 1;
     }
 
-    h1{
+    h1 {
         color: #ECDFCC;
     }
 
-    p{
+    p {
         color: #fff;
     }
 }
